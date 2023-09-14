@@ -24,7 +24,7 @@ main(){
 
 
 
-    while(1){ //ініціалізація перевірки
+    while(1){ //simple check
         printf("Enter a number you want to get a root from: ");
         fgets(x_n, 48, stdin); //Receiving unformatted input
         x = strtod(x_n, NULL); //Formatting
@@ -104,7 +104,7 @@ RootCalc(double x, int k, double e, double y, double b){
             break;
         }
 
-        else{ //Загальна функція
+        else{ //Г‡Г ГЈГ Г«ГјГ­Г  ГґГіГ­ГЄГ¶ВіГї
             double yk = pow(y, k-1);
 
             b = (1.0/k)*((x/yk) - y);
