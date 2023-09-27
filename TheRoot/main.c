@@ -96,7 +96,7 @@ RootCalc(double x, int k, double e, double y, double b)
         }
 
         else
-        { // Çàãàëüíà ôóíêö³ÿ
+        { //main function
             double yk = pow(y, k - 1);
 
             b = (1.0 / k) * ((x / yk) - y);
