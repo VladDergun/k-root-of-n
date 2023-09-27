@@ -20,19 +20,19 @@ main()
     while (1)
     { // simple check
         printf("Enter a number you want to get a root from: ");
-        fgets(x_n, 48, stdin); // Receiving unformatted input
+        fgets(x_n, sizeof(x_n)-1, stdin); // Receiving unformatted input
         x = strtod(x_n, NULL); // Formatting
-        fflush(stdin);         // Clearing buffer of extra characters
+        
 
         printf("Enter the k-power of a root: ");
-        fgets(k_n, 10, stdin);
+        fgets(k_n, sizeof(k_n)-1, stdin);
         k = strtod(k_n, NULL);
-        fflush(stdin);
+        
 
         printf("Enter precision : ");
-        fgets(e_n, 18, stdin);
+        fgets(e_n, sizeof(e_n)-1, stdin);
         e = strtod(e_n, NULL);
-        fflush(stdin);
+        
 
         if (k > 0 && k % 2 == 0 && x < 0)
         {
